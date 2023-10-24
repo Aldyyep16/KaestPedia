@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  margin: 0; 
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+
+
+
+.featured_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+  height: 480px;
+  width: 99vw;
+  margin: 0 auto;
+}
+
+.featured_column {
+  background-color: #fff;
+  height: 100%;
+  width: 49%;
+  display: grid;
+  grid-template-columns: auto 4rem 50%;
+  grid-template-rows: 1fr 3fr 8fr 3fr 1fr;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.featured_column:first-child {
+  margin-right: 1.5%;
+}
+
+.featured_column:hover {
+  transform: translateY(-0.5%);
+  border-bottom: 4px solid ; 
+  color:#125c58;
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+
+.featured_img {
+  grid-column-start: 3;
+  grid-column-end: end;
+  grid-row-start: 1;
+  grid-row-end: end;
+}
+
+#featured_img-1 {
+  background-image: url("imgs/th.jpg");
+  background-size: cover;
+}
+
+#featured_img-2 {
+  background-image: url("imgs/plato-collection-abecasisscience-photo-library-removebg-preview\ \(1\).png"); 
+  background-size: cover;
+ background-position: center;
+}
+
+.featured_header {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding-left: 4rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #125c58;
+}
+
+.featured_abstract {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  padding-left: 4rem;
+  font-size: 1.5rem;
+}
+
+.featured_link {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-left: 4rem;
+}
+
+.featured_link a {
+    color: #125c58;
+    font-size: 1.5rem;
+}

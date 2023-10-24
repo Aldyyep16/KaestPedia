@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactt.css">
+    <link rel="shortcut icon" href="imgs/5ca393011cf23004f2836811.png" type="image/x-icon">
+    <title>Contact Form | KaestPedia</title>
+</head>
+<body>
+    <div id="form-contact">
+        <form action="https://formspree.io/f/xyyqlbay" method="POST">
+          <h2 class="fw-bolder">Hubungi Kami </h2>
+          <div class="email-name">
+            <label>
+              <h5>Email<span class="req">*</span></h5>
+              <input type="email" name="email" placeholder="@mail.com" required>
+            </label>
+            <label>
+              <h5>Full Name<span class="req">*</span></h5>
+              <input type="text" name="name" placeholder=" Your Name " required>
+            </label>
+          </div>
+          <label class="msg">
+            <h5>Message<span class="req">*</span></h5>
+            <textarea name="message" placeholder="Hi!" required></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <div class="btn"> 
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+      
+      <script src="contact.js"></script>
+</body>
+</html>
